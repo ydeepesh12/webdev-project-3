@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+ 
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I am</h1>
+            <h2 class="highlight">Full Stack Web Developer</h2>
+            <p>Building modern web applications with MERN stack.</p>
+        </div>
+        <div class="hero-img">
+            <img width="200" height="200" src="WhatsApp Image 2025-11-23 at 19.08.07.jpeg" alt="Profile Avatar">
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-desc">
+            Hello! My name is Yuvraj Bishnoi, and I am currently learning web development. 
+            This is my Third portfolio website where I showcase my passion for creating interactive 
+            and responsive web pages. I am a student at KR Mangalam University, pursuing a B.Tech degree.
+            I am hardworking and determined to grow as a developer.
+        </p>
+    </section>
+
+    <section id="skills" class="section-padding">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <span>Expert</span>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <span>Expert</span>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <span>Learning</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-light">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-img-placeholder">
+            <img src="Screenshot 2025-11-23 at 7.18.46 PM.png" alt="Portfolio Project" class="project-img">
+                </div>
+                </div>
+                <div class="project-info">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive portfolio website built using HTML and CSS (Lab 3 Project).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <label>Name</label>
+                <input type="text" placeholder="">
+                
+                <label>Email</label>
+                <input type="email" placeholder="">
+                
+                <label>Message</label>
+                <textarea rows="4" placeholder=""></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
+
+<script>
+    
+    let mybutton = document.getElementById("backToTop");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.display = "block"; 
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+    <footer>
+        <p>copyright 2025 Yuvraj Bishnoi. All right reserved.</p>
+    </footer>
+
+</body>
+</html>
